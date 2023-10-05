@@ -26,7 +26,7 @@ JavascriptExecutor je = (JavascriptExecutor)driver;
 	  // First parameter of  JavascriptExecutor is script 
 	
 	Assert.assertEquals(title, "WebDriverUniversity.com");
-	driver.close();
+	//driver.close();
 	
 	
 	

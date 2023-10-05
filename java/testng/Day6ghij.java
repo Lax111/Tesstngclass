@@ -1,7 +1,6 @@
 package testng;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,9 +8,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Day6f {
+public class Day6ghij {
 
-	
 	WebDriver driver;
 
 	@Test
@@ -23,18 +21,15 @@ public class Day6f {
 				driver.get("http://www.webdriveruniversity.com/Actions/index.html");
 
 	Actions ac = new Actions(driver);
-	WebElement  draggable = driver.findElement(By.id("draggable"));
-	WebElement  droppable = driver.findElement(By.id("droppable"));
-	ac.dragAndDrop(draggable, droppable).build().perform();
-	Assert.assertEquals(droppable.getText(), "Dropped");
+	WebElement  clickable = driver.findElement(By.id("click-box"));
+
+	ac.clickAndHold(clickable).build().perform();
+	Assert.assertEquals(clickable.getText(),"Well done! keep holding that click now.....");
 	driver.close();
-	}
+	
+	
+	
+	
+	}	
+	
 }
-
-	
-	
-
-
-	
-	
-	

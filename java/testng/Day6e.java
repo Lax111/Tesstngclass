@@ -19,7 +19,7 @@ public class Day6e {
 	//Javascript executor to click on element
 		System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 				driver = new ChromeDriver();
-				driver.get("http://www.webdriveruniversity.com/");
+				driver.get("http://www.webdriveruniversity.com/Actions/index.html");
 
 	WebElement scrollElement = driver.findElement(By.id("scrolling-around"));
 JavascriptExecutor je = (JavascriptExecutor)driver;
@@ -27,7 +27,7 @@ JavascriptExecutor je = (JavascriptExecutor)driver;
 	  // First parameter of  JavascriptExecutor is script 
 	
 	Assert.assertEquals(title, "WebDriverUniversity.com");
-	driver.close();
+	//driver.close();
 	
 	}	
 }

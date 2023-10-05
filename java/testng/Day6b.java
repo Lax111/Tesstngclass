@@ -23,7 +23,7 @@ public class Day6b {
 JavascriptExecutor je = (JavascriptExecutor)driver;
 je.executeScript("arguments[0].scrollIntoView(true)",scrollElement);  
 Thread.sleep(5000);
-driver.close();
+//driver.close();
 }
 
 }
