@@ -34,8 +34,8 @@ public void Login(String username, String pass) {
 		driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com");
 		
-		driver.findElement(By.id("user-name")).sendKeys("username");;
-		driver.findElement(By.id("password")).sendKeys("pass");;
+		driver.findElement(By.id("user-name")).sendKeys(username);
+		driver.findElement(By.id("password")).sendKeys(pass);
 		driver.findElement(By.id("login-button")).click();
 		boolean avail = driver.getCurrentUrl().contains("inventory");
 		Assert.assertTrue(avail);
@@ -43,5 +43,5 @@ public void Login(String username, String pass) {
 		driver.close();	
 }	 
 }			
-	
+	                                                                                
 
