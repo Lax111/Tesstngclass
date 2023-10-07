@@ -11,12 +11,12 @@ public class Day10 {
 
 	WebDriver driver;
 	
-	@Parameters({"username","Password"})
+	@Parameters({"username","password"})
 	@Test
 	
 	public void TestCase1(String un, String pwd) {
-	
-		System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
+	System.out.println("case 1");
+		//System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com");
 	
@@ -29,12 +29,12 @@ public class Day10 {
 		driver.close();	
 }	 
 	
-	@Parameters({"username","Password"})
+	@Parameters({"username","password"})
 	@Test
 	
 	public void TestCase2(String un, String pwd) {
-	
-		System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
+		System.out.println("case 2");
+		//System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com");
 	
@@ -47,12 +47,12 @@ public class Day10 {
 		driver.close();	
 }	 
 	
-	@Parameters({"username","Password"})
+	@Parameters({"username","password"})
 	@Test
 	
 	public void TestCase3(String un, String pwd) {
-	
-		System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
+		System.out.println("case 3");
+		//System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com");
 	
@@ -65,12 +65,12 @@ public class Day10 {
 		driver.close();	
 }	 
 	
-	@Parameters({"username","Password"})
+	@Parameters({"username","password"})
 	@Test
 	
 	public void TestCase4(String un, String pwd) {
-	
-		System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
+		System.out.println("case 4");
+		//System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com");
 	
