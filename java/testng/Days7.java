@@ -69,7 +69,7 @@ public class Days7 {
 		
 	@AfterMethod
 	public void AfterMethod() {
-		driver.close();
+		//driver.close();
 	}
 	
 	

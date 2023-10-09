@@ -5,11 +5,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Day6c {
+public class test6d {
 
-	
 	WebDriver driver;
 
 	@Test
@@ -22,21 +22,19 @@ public class Day6c {
 
 	WebElement scrollElement = driver.findElement(By.id("scrolling-around"));
 JavascriptExecutor je = (JavascriptExecutor)driver;
-je.executeScript("arguments[0].setAttribute('data-cy','two')",scrollElement);  
-//je.executeScript("arguments[0].removeAttribute('data-cy')",scrollElement);  
-String attributeValue =  scrollElement.getAttribute("data-cy");//two
-System.out.println(attributeValue);
-
-
-//driver.close();
+	String title = (String)je.executeScript("return document.title;");
+	  // First parameter of  JavascriptExecutor is script 
+	
+	Assert.assertEquals(title, "WebDriverUniversity.com");
+	//driver.close();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
 }
-
-}
-	
-	
-	
-	
-	
-	
-	
-
