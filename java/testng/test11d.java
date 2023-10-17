@@ -2,7 +2,7 @@ package testng;
 
 import org.testng.annotations.Test;
 
-public class Day11d {
+public class test11d {
 
 	@Test(priority = 1)
 	public void TestOne() {

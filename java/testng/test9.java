@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class Day9 {
+public class test9 {
 
 	WebDriver driver;
 	

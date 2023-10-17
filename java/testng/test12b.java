@@ -2,7 +2,7 @@ package testng;
 
 import org.testng.annotations.Test;
 
-public class Day12b {
+public class test12b {
 	@Test(groups = {"login"})
 	public void testCase4() {
 		System.out.println("login test case one");

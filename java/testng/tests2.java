@@ -3,7 +3,7 @@ package testng;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
-public class Days2 {
+public class tests2 {
 
 @Test
 public void testcase2() {

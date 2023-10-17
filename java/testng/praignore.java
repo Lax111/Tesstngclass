@@ -4,7 +4,7 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 @Ignore
-public class jjjjjj {
+public class praignore {
 
 	@Ignore
 	public class Day11e {

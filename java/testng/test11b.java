@@ -3,7 +3,7 @@ package testng;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Day11b {
+public class test11b {
 	@Parameters({"browser","username","password","dbadmin"})
 	@Test
 	public void TestcaseFour(String bw,String un,String pwd,String db) {

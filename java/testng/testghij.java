@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Day6ghij {
+public class testghij {
 
 	WebDriver driver;
 

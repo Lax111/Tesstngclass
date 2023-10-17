@@ -3,7 +3,7 @@ package testng;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Day13b {
+public class test13b {
 
 	@Test(dependsOnMethods = "addToCart")
 	public void login() {

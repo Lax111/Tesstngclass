@@ -31,7 +31,7 @@ public class Totallink
 		{
 			System.out.println(i+ " : "+text);
 		}
-
+	}}
 	
 	@Test
 	public void brokenlink2() 

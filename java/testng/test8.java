@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class Day8 {
+public class test8 {
 
 	
 	// Hard assertion and Soft assertion	

@@ -2,7 +2,7 @@ package testng;
 
 import org.testng.annotations.Test;
 
-public class Day12a {
+public class test12a {
 	
 	@Test(groups = {"smoke"})
 	public void testCase1() {

@@ -4,7 +4,7 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 @Ignore
-public class Day11e {
+public class test11e {
 
 	
 	@Test(priority = 1)

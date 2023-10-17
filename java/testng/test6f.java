@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Day6f {
+public class test6f {
 
 	
 	WebDriver driver;
