@@ -3,8 +3,8 @@ package testCase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pages.Login;
@@ -14,12 +14,14 @@ public class LoginTest {
 	private WebDriver driver;
     private Login loginPage;
     private ProductPage productPage;
-
-    @BeforeTest
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
+    
+    @BeforeMethod
+    public void setUp() 
+    {
+    	System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver (3)\\chromedriver\\chromedriver.exe");
+        
         driver = new ChromeDriver();
-        driver.get("https://www.saucedemo.com/v1/");
+        driver.get("https://www.saucedemo.com/");
         loginPage = new Login(driver);
         productPage = new ProductPage(driver);
     }
@@ -46,8 +48,9 @@ public class LoginTest {
         Assert.assertEquals(actualTitle, expectedTitle);
     }
 
-    @AfterClass
-    public void tearDown() {
+    @AfterMethod
+    public void tearDown() 
+    {
         driver.quit();
     }
 }

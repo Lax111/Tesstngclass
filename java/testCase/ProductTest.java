@@ -20,9 +20,10 @@ public class ProductTest {
 
 	 @BeforeTest
 	    public void setup() {
-	        System.setProperty("webdriver.chrome.driver", "C://Users//Lenovo//Desktop//chromedriver//chromedriver.exe");
+		 //System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver (3)\\chromedriver\\chromedriver.exe");
+		 System.setProperty("webdriver.Chrome.driver","C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
 	        driver = new ChromeDriver();
-	        driver.get("https://www.saucedemo.com/v1/");
+	        driver.get("https://www.saucedemo.com/");
 	        loginPage = new Login(driver);
 	        productPage = new ProductPage(driver);
 	        loginPage.login("standard_user", "secret_sauce");
@@ -34,8 +35,6 @@ public class ProductTest {
 		 boolean result = utils.verifyTitle(driver, "Swag Labs");
 		 AssertJUnit.assertTrue(result);
 	 }
-
-	 
 	@AfterTest
 	    public void tearDown() {
 	        driver.quit();
