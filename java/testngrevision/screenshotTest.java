@@ -7,7 +7,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 @Listeners(CustomListener.class)
-public class screenshotTest extends Base {
+public class screenshotTest extends BaseA {
 
 	@BeforeMethod
 	public void setup() {
